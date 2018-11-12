@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,11 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="List Your Business With Us"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="58dp" />
+        android:textSize="24sp" />
 
     <View
         android:id="@+id/divider"
@@ -27,20 +23,14 @@
         android:layout_height="1dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="99dp" />
+        android:background="?android:attr/listDivider" />
 
     <TextView
         android:id="@+id/bizName"
         android:layout_width="125dp"
         android:layout_height="34dp"
         android:text="Business Name"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="127dp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/Name"
@@ -48,9 +38,7 @@
         android:layout_height="38dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="123dp" />
+        android:text="Name" />
 
     <EditText
         android:id="@+id/editDetails"
@@ -58,27 +46,21 @@
         android:layout_height="44dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Details"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="172dp" />
+        android:text="Details" />
 
     <TextView
         android:id="@+id/bizDetails"
         android:layout_width="139dp"
         android:layout_height="35dp"
         android:text="Details"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="181dp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/MainProduct"
         android:layout_width="127dp"
         android:layout_height="27dp"
         android:text="Main Product"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="245dp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/editProduct"
@@ -86,18 +68,14 @@
         android:layout_height="44dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="product"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="233dp" />
+        android:text="product" />
 
     <TextView
         android:id="@+id/keywordView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Business Keyword"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="303dp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/editKeyword"
@@ -105,27 +83,21 @@
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="keyword"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="293dp" />
+        android:text="keyword" />
 
     <TextView
         android:id="@+id/CategoryView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Category"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="359dp" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="385dp"
         android:layout_height="43dp"
-        android:text="Business Form"
         android:background="@color/colorAccent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:text="Business Form" />
 
     <Button
         android:id="@+id/listBiz_button"
@@ -135,12 +107,8 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:onClick="formInsert"
         android:background="@color/colorSecondary"
-        android:text="List My Business"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="447dp" />
+        android:onClick="formInsert"
+        android:text="List My Business" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
