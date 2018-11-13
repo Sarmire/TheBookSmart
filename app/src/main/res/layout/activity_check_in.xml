@@ -59,6 +59,7 @@
             android:text="Drone Title" />
 
         <Button
+            android:id="@+id/checkIn"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_centreHorizontal="true"
@@ -66,7 +67,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="2dp"
             android:background="@color/colorSecondary"
-            android:text="Book Now" />
+            android:text="Check In" />
 
         <TextView
             android:id="@+id/checkInDate"
