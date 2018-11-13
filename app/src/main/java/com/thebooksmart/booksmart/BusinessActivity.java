@@ -28,7 +28,7 @@ public class BusinessActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_business);
 
-        name = (EditText)findViewById(R.id.editTextName);
+        name = (EditText)findViewById(R.id.Name);
         editDetails = (EditText)findViewById(R.id.editDetails);
         editProduct = (EditText)findViewById(R.id.editProduct);
         editKeyword = (EditText)findViewById(R.id.editKeyword);
