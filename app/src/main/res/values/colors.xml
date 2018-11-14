@@ -7,4 +7,5 @@
     <color name="colorDetails">#0000ff</color>
     <color name="colorText">#ffffff</color>
     <color name="colorTabbar">#DCDCDC</color>
+    <color name="colorDelete">#ff00</color>
 </resources>
