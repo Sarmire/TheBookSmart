@@ -20,7 +20,8 @@
         <activity android:name=".user_profile" />
         <activity android:name=".CheckInActivity" />
         <activity android:name=".Confirm_book" />
-        <activity android:name=".business_availableActivity"></activity>
+        <activity android:name=".business_availableActivity" />
+        <activity android:name=".booking_business"></activity>
     </application>
 
 </manifest>
