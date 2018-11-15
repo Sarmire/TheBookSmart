@@ -19,7 +19,8 @@
         <activity android:name=".BusinessActivity" />
         <activity android:name=".user_profile" />
         <activity android:name=".CheckInActivity" />
-        <activity android:name=".Confirm_book"></activity>
+        <activity android:name=".Confirm_book" />
+        <activity android:name=".business_availableActivity"></activity>
     </application>
 
 </manifest>
