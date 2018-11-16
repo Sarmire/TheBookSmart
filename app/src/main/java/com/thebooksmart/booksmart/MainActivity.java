@@ -1,6 +1,8 @@
 package com.thebooksmart.booksmart;
 
 import android.app.AlarmManager;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -16,6 +18,11 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity {
 
         Button b1;
+
+        //private static final String TAG = "MainActivity";
+        //private FragmentPagerAdapter mSection;
+        //private ViewPager mViewPager;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -28,6 +35,39 @@ public class MainActivity extends AppCompatActivity {
                     addNotification();
                 }
             });
+
+            //mSection = new FragmentPagerAdapter(getSupportFragmentManager());
+
+            //this part is used for tab navigation
+
+            //mViewPager = (ViewPager) findViewById(R.id.tabs);
+            //tablayout.setupWithViewPager(mViewPager);
+
+            //tabLayout.getTabAt(0).setIcon(R.drawable.ic_home);
+            //tabLayout.getTabAt(1).setIcon(R.drawable.ic_explore);
+            //tabLayout.getTabAt(2).setIcon(R.drawable.ic_email);
+            //tabLayout.getTabAt(3).setIcon(R.drawable.ic_account);
+
+            //BottomNavigationView bottomNavigationView = (BottomNavigationView)findViewById (R.id.bottomNavView_bar);
+           //BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+
+           //bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+           // @Override
+           // public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+           // return false
+           // }
+           // });
+           // }
+           //
+           //private void setupViewPager(ViewPager viewpager){
+           //   SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager())l
+           //   adapter.addFragment(new Tab1Fragment());
+            //  adapter.addFragment(new Tab2Fragment());
+            //  adapter.addFragment(new Tab3Fragment());
+            //  viewPager.setAdapter(adapter);
+            //THIS IS HAVE TO BE FIXED ON ACTIVITY_MAIN.XML ON BOTTOM NAVIGATIONVIEW
+
+
         }
 
         private void addNotification() {
