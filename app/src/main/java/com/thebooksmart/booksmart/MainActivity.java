@@ -90,9 +90,9 @@ public class MainActivity extends AppCompatActivity {
         //add alarm service when check in is coming
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.SECOND,5);
+        //calendar.add(Calendar.SECOND,5);
         Intent intent = new Intent("")
-        PendingIntent broadcast = PendingIntent.getBroadcast(this, 100, Intent(""), PendingIntent.FLAG_UPDATE_CURRENT);
-        alarmManager.setExact(AlarmManager.RTC_MAKEUP, calendar.getInTimeInMillis(),);
+       // PendingIntent broadcast = PendingIntent.getBroadcast(this, 100, Intent(""), PendingIntent.FLAG_UPDATE_CURRENT);
+        //alarmManager.setExact(AlarmManager.RTC_MAKEUP, calendar.getInTimeInMillis(),);
     }
 

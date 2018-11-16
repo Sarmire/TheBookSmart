@@ -76,7 +76,6 @@
                     android:textColor="@color/colorText"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="Explore"
                     />
 
         </android.support.v7.widget.CardView>

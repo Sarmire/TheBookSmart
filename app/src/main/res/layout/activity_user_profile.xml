@@ -6,182 +6,217 @@
     android:layout_height="match_parent"
     tools:context=".user_profile">
 
-    <View
+    <ImageView
+        android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:background="@color/colorSecondary" />
+        android:layout_height="120dp"
+        android:src="@drawable/traveller"
+        android:scaleType="centerCrop" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
+
+            <ImageView
                 android:id="@+id/profilePic"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_centerHorizontal="true"
-                android:elevation="1dp"
+                android:layout_width="140dp"
+                android:layout_height="110dp"
                 android:src="@drawable/traveller" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="70dp"
-                    android:layout_marginBottom="10dp"
-                    app:cardCornerRadius="5dp"
-                    app:contentPaddingBottom="15dp"
-                    app:contentPaddingLeft="15dp"
-                    app:contentPaddingRight="15dp"
-                    app:contentPaddingTop="40dp">
+        </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+    </RelativeLayout>
 
-                        <TextView
-                            android:id="@+id/NameID"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginBottom="7dp"
-                            android:text="Dedek Livia"
-                            android:textSize="35sp"
-                            android:textStyle="bold" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:text="User Name"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorSecondary"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
 
-                        <TextView
-                            android:id="@+id/DetailsID"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginBottom="10dp"
-                            android:text="Agrocore Enterprise"
-                            android:textSize="27sp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/username"
+       android:layout_marginBottom="10dp">
 
-                        <TextView
-                            android:id="@+id/keywordID"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="Building Sustainable Technology From Agricultural Produce"
-                            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/getbusinessname"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Your Business Name"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-                        />
+        <TextView
+            android:id="@+id/businessdetails"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Description : "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/getbusinessname"
 
-                    </LinearLayout>
+            />
+        <EditText
+            android:id="@+id/getbusinessdetails"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/businessdetails"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@+id/getbusinessname"
+            />
+        <TextView
+            android:id="@+id/businessproduct"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:text="Main Business : "
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/getbusinessname"
 
-                </android.support.v7.widget.CardView>
+            />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="2dp"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
+        <EditText
+            android:id="@+id/getbusinessproduct"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/getbusinessdetails"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/businessproduct" />
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+        <TextView
+            android:id="@+id/businesstype"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:text="Business Type: "
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/getbusinessproduct"
 
-                        <TextView
-                            android:id="@+id/rating"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="9.5"
-                            android:textSize="35dp"
-                            android:textStyle="bold" />
+            />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="rating"
-                            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/getbusinesstype"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/getbusinessproduct"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/businesstype" />
 
+        <ImageView
+            android:id="@+id/approvepic1"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:layout_below="@id/businesstype"
+            android:src="@drawable/traveller"
+            android:scaleType="centerInside"
+            />
 
+        <ImageView
+            android:id="@+id/approvepic2"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/approvepic1"
+            android:layout_margin="8dp"
+            android:layout_below="@id/businesstype"
+            android:src="@drawable/traveller"
+            android:scaleType="centerInside"
+            />
 
-                    </LinearLayout>
+        <ImageView
+            android:id="@+id/approvepic3"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/approvepic2"
+            android:layout_margin="8dp"
+            android:layout_below="@id/businesstype"
+            android:src="@drawable/traveller"
+            android:scaleType="centerInside"
+            />
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/bookRate"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="355,000"
-                            android:textSize="35dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="booked"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                    <!--<LinearLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:orientation="horizontal"-->
-                    <!--android:layout_marginTop="10dp"-->
-                    <!--android:weightSum="2">-->
-                    <!---->
-                    <!--<Button-->
-                    <!--android:layout_width="125dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:layout_marginRight="10dp"-->
-                    <!--android:layout_marginLeft="50dp"-->
-                    <!--android:textColor="@color/colorAccent"-->
-                    <!---->
-                    <!---->
-                    <!--</LinearLayout>-->
-
-
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="43dp"
-                    android:layout_margin="4dp"
-                    android:background="@color/colorDetails"
-                    android:text="Enquiry Now"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:textColor="@color/colorText"/>
-            </LinearLayout>
+        <ImageView
+            android:id="@+id/approvepic4"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/approvepic3"
+            android:layout_margin="8dp"
+            android:layout_below="@id/businesstype"
+            android:src="@drawable/traveller"
+            android:scaleType="centerInside"
+            />
 
 
-        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="282dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorTabbar"
+            android:text="About" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorTabbar"
+            android:text="Package" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorTabbar"
+            android:text="Statistics" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorTabbar"
+            android:text="Friends" />
+
+
     </LinearLayout>
+
+
 </RelativeLayout>
