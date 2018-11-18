@@ -22,7 +22,8 @@
         <activity android:name=".Confirm_book" />
         <activity android:name=".business_availableActivity" />
         <activity android:name=".booking_business" />
-        <activity android:name=".business_profile"></activity>
+        <activity android:name=".business_profile" />
+        <activity android:name=".ListBusinessActivity"></activity>
     </application>
 
 </manifest>
