@@ -41,7 +41,7 @@ public class listAdapter extends RecyclerView.Adapter<listAdapter.ViewHolder>{
         //it's not appear from listItem.xml
         //bugs need to fix
 
-        //viewHolder.bizImg.setTooltipText(listItems.ge);
+        //viewHolder.bizImg.setScaleType(get);
     }
 
     @Override

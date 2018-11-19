@@ -10,10 +10,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,18 +27,47 @@ public class MainActivity extends AppCompatActivity {
         //private FragmentPagerAdapter mSection;
         //private ViewPager mViewPager;
 
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter adapter;
+
+    private List<ListItem> listItems;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
-            b1 = (Button)findViewById(R.id.button);
-            b1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    addNotification();
+            recyclerView = (RecyclerView) findViewById(R.id.listBiz);
+            recyclerView.setHasFixedSize(true);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+            //this one is inaccurate..maybe logic error
+            listItems = new ArrayList<>();
+
+                for(int i=0;i<10;i++){
+                    ListItem listItem = new ListItem(
+                            "" + i+1,
+                            "" + i+1,
+                            "" + i+1,
+                            "" + i+1
+                    );
+
+                    listItems.add(listItem);
                 }
-            });
+
+                adapter = new listAdapter(listItems, this);
+
+                recyclerView.setAdapter(adapter);
+            }
+
+
+           // b1 = (Button)findViewById(R.id.button);
+            //b1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                //public void onClick(View v) {
+                //    addNotification();
+                //}
+            //});
 
             //mSection = new FragmentPagerAdapter(getSupportFragmentManager());
 
@@ -88,10 +121,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //add alarm service when check in is coming
-        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-        Calendar calendar = Calendar.getInstance();
+       // AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+       // Calendar calendar = Calendar.getInstance();
         //calendar.add(Calendar.SECOND,5);
-        Intent intent = new Intent("")
+       // Intent intent = new Intent("")
        // PendingIntent broadcast = PendingIntent.getBroadcast(this, 100, Intent(""), PendingIntent.FLAG_UPDATE_CURRENT);
         //alarmManager.setExact(AlarmManager.RTC_MAKEUP, calendar.getInTimeInMillis(),);
     }
