@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
         private void loadRecyclerViewData(){
 
+        }
+}
+
             //this one is deprecated..i don't want to use toast either
             //progress bar is seemingly unknown on how to use
            /* ProgressDialog progressDialog  = new ProgressDialog(this);
