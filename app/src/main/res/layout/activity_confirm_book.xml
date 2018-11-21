@@ -22,7 +22,40 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="Package Name"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:text="Date"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:text="Status"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
 
         <ImageView
             android:id="@+id/bookPic"
@@ -37,8 +70,8 @@
             android:id="@+id/bookDescription"
             android:layout_width="120dp"
             android:layout_height="70dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginLeft="130dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginLeft="20dp"
             android:text="working well"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -48,8 +81,8 @@
             android:id="@+id/acceptBooking"
             android:layout_width="80dp"
             android:layout_height="40dp"
-            android:layout_marginTop="140dp"
-            android:layout_marginLeft="265dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="12dp"
             android:text="Accept"
             android:textSize="15sp"
@@ -60,10 +93,10 @@
             android:id="@+id/reject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="140dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="135dp"
             app:backgroundTint="@color/colorDelete" />
 
-
+        </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
