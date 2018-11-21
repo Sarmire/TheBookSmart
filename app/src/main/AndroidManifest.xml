@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.thebooksmart.booksmart">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,7 +25,9 @@
         <activity android:name=".business_availableActivity" />
         <activity android:name=".booking_business" />
         <activity android:name=".business_profile" />
-        <activity android:name=".ListBusinessActivity"></activity>
+        <activity android:name=".ListBusinessActivity" />
+        <activity android:name=".manage_booking" />
+        <activity android:name=".manage_business"></activity>
     </application>
 
 </manifest>
