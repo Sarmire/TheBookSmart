@@ -132,7 +132,7 @@
             android:layout_toRightOf="@+id/businesstype" />
 
         <ImageView
-            android:id="@+id/approvepic1"
+            android:id="@+id/imgBiz1"
             android:layout_width="80dp"
             android:layout_height="60dp"
             android:layout_margin="8dp"
@@ -142,10 +142,10 @@
             />
 
         <ImageView
-            android:id="@+id/approvepic2"
+            android:id="@+id/imgBiz2"
             android:layout_width="80dp"
             android:layout_height="60dp"
-            android:layout_toRightOf="@+id/approvepic1"
+            android:layout_toRightOf="@+id/imgBiz1"
             android:layout_margin="8dp"
             android:layout_below="@id/businesstype"
             android:src="@drawable/traveller"
@@ -153,10 +153,10 @@
             />
 
         <ImageView
-            android:id="@+id/approvepic3"
+            android:id="@+id/imgBiz3"
             android:layout_width="80dp"
             android:layout_height="60dp"
-            android:layout_toRightOf="@+id/approvepic2"
+            android:layout_toRightOf="@+id/imgBiz2"
             android:layout_margin="8dp"
             android:layout_below="@id/businesstype"
             android:src="@drawable/traveller"
@@ -164,10 +164,10 @@
             />
 
         <ImageView
-            android:id="@+id/approvepic4"
+            android:id="@+id/imgBiz4"
             android:layout_width="80dp"
             android:layout_height="60dp"
-            android:layout_toRightOf="@+id/approvepic3"
+            android:layout_toRightOf="@+id/imgBiz3"
             android:layout_margin="8dp"
             android:layout_below="@id/businesstype"
             android:src="@drawable/traveller"

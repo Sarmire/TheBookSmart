@@ -127,6 +127,7 @@
         android:textSize="18sp" />
 
     <Spinner
+        android:id="@+id/spinnerCat"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_below="@id/editKeyword"
@@ -145,11 +146,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/CategoryView"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:background="@color/colorSecondary"
+        android:background="@color/colorDetails"
         android:onClick="formInsert"
-        android:text="List My Business" />
+        android:text="List My Business"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorText"
+        />
 
 </RelativeLayout>
