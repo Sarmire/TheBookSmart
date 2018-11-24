@@ -5,4 +5,11 @@
     <string name="check_in">Check In</string>
     <string name="list_business">List My Business</string>
     <string name="confirm_booking">Confirm Booking</string>
+    <string name="loading">loading...</string>
+    <string-array name="business_class">
+
+        <item>Fixed Location</item>
+        <item>Subscription</item>
+        <item>Delivery</item>
+    </string-array>
 </resources>

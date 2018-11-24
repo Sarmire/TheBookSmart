@@ -31,4 +31,5 @@ public class businessList_adapter extends ArrayAdapter<businessList> {
         //EditText bizName = (EditText)view.findViewById(R.id.getbusinessname);
         //return super.getView(position, convertView, parent);
     }
+
 }

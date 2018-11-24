@@ -35,6 +35,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-database:16.0.1'
     implementation 'com.github.erd:android-volley:1.0.0'
+    implementation 'mysql:mysql-connector-java:8.0.13'
 }
 
 apply plugin: 'com.google.gms.google-services'
