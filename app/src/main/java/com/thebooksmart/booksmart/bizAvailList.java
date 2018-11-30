@@ -1,4 +1,4 @@
 package com.thebooksmart.booksmart;
 
-public class BizList {
+public class bizAvailList {
 }

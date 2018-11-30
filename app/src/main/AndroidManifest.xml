@@ -27,7 +27,7 @@
         <activity android:name=".business_profile" />
         <activity android:name=".ListBusinessActivity" />
         <activity android:name=".manage_booking" />
-        <activity android:name=".manage_business"></activity>
+        <activity android:name=".manage_business" />
     </application>
 
 </manifest>

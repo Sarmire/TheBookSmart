@@ -20,6 +20,7 @@
         android:orientation="vertical">
 
         <RelativeLayout
+            android:id="@+id/profileBiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp">
@@ -60,12 +61,12 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="50dp"
                             android:layout_marginBottom="7dp"
-                            android:text="Dedek Livia"
+                            android:text="Biz Name"
                             android:textSize="35sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/DetailsID"
+                            android:id="@+id/businessTitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
@@ -74,7 +75,7 @@
                             android:textSize="27sp" />
 
                         <TextView
-                            android:id="@+id/keywordID"
+                            android:id="@+id/businessdetail"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
@@ -184,4 +185,5 @@
 
         </RelativeLayout>
     </LinearLayout>
+
 </RelativeLayout>

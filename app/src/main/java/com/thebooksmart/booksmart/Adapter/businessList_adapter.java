@@ -24,12 +24,15 @@ public class businessList_adapter extends ArrayAdapter<businessList> {
         this.biz = c;
 
     }
-    public View getView(int position, View convertView, ViewGroup parent){
+    public  View getView(int position, View convertView, ViewGroup parent){
         LayoutInflater inflater = LayoutInflater.from(biz);
         View view = inflater.inflate(R.layout.activity_user_profile,null,true);
 
         //EditText bizName = (EditText)view.findViewById(R.id.getbusinessname);
         //return super.getView(position, convertView, parent);
+        //
+        return view;
     }
+
 
 }

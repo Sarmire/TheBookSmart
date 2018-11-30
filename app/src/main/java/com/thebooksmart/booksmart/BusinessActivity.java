@@ -32,7 +32,7 @@ public class BusinessActivity extends AppCompatActivity {
     Spinner spinnerCat;
     Button listBiz_button;
     ArrayAdapter<CharSequence> adapter;
-    private static final String DB_URL = "jdbc:mysql://192.168.1.21/booksmart"; //change to your ipv4 address
+    private static final String DB_URL = "jdbc:mysql://192.168.43.91/booksmart"; //change to your ipv4 address
     private static final String USER ="root";
     private static final String PASS ="";
     //FirebaseDatabase database;
@@ -91,13 +91,13 @@ public class BusinessActivity extends AppCompatActivity {
 
     }
     //this one obtain from bizlist java class
-    private void getValues(){
+   /* private void getValues(){
         bizList.setName(name.getText().toString());
         bizList.setDetails(editDetails.getText().toString());
         bizList.setProducts(editProduct.getText().toString());
         bizList.setKeyword(editKeyword.getText().toString());
 
-    }
+    }*/
 
     public void formInsert(View view)
     {
