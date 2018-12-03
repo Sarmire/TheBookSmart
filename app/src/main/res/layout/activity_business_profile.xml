@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user_profile">
+    tools:context=".business_profile">
 
     <View
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
             android:layout_marginTop="40dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profilePic"
+                android:id="@+id/bizImg"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_centerHorizontal="true"
@@ -55,31 +55,22 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/NameID"
+                            android:id="@+id/availBiz"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="50dp"
                             android:layout_marginBottom="7dp"
-                            android:text="Biz Name"
+                            android:text="@string/get_biz_title"
                             android:textSize="35sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/businessTitle"
+                            android:id="@+id/availBizDetail"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:layout_marginBottom="10dp"
-                            android:text="Agrocore Enterprise"
-                            android:textSize="27sp" />
-
-                        <TextView
-                            android:id="@+id/businessdetail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:text="Building Sustainable Technology From Agricultural Produce"
+                            android:text="@string/get_biz_description"
                             android:textSize="20sp" />
 
                         />
@@ -179,7 +170,8 @@
                     android:text="Enquiry Now"
                     android:textStyle="bold"
                     android:textSize="20sp"
-                    android:textColor="@color/colorText"/>
+                    android:textColor="@color/colorText"
+                    android:onClick="bookBiz"/>
             </LinearLayout>
 
 

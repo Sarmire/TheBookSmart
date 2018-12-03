@@ -6,6 +6,8 @@
     <string name="list_business">List My Business</string>
     <string name="confirm_booking">Confirm Booking</string>
     <string name="loading">loading...</string>
+    <string name="get_biz_description" />
+    <string name="get_biz_title" />
     <string-array name="business_class">
 
         <item>Fixed Location</item>

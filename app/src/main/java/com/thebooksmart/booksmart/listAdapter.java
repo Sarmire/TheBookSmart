@@ -27,12 +27,15 @@ public class listAdapter extends RecyclerView.Adapter<listAdapter.ViewHolder>{
 
     private Context context;
     private List<ListItem> listItems;
+    private OnItemClickListener itemClick;
 
 
     public listAdapter(Context context, List<ListItem> listItems) {
         this.listItems = listItems;
         this.context = context;
     }
+
+
 
 
     @NonNull
@@ -82,6 +85,14 @@ public class listAdapter extends RecyclerView.Adapter<listAdapter.ViewHolder>{
         return listItems.size();
     }
 
+    public interface OnItemClickListener {
+        void onItemClick(int position);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener){
+        itemClick = listener;
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         public ImageView bizImg;
@@ -96,6 +107,22 @@ public class listAdapter extends RecyclerView.Adapter<listAdapter.ViewHolder>{
             availBiz = (TextView)itemView.findViewById(R.id.availBiz);
             availBizDetail = (TextView)itemView.findViewById(R.id.availBizDetail);
             viewPackage = (Button)itemView.findViewById(R.id.viewPackage);
+
+           //when click on it..this is open up detail
+            itemView.setOnClickListener(new View.OnClickListener()
+            {
+               // private static final String TAG = "ViewHolder";
+                @Override
+                public void onClick(View v) {
+                    if(itemClick != null){
+                        int position = getAdapterPosition();
+                        // Log.d(TAG, "onClick: working");
+                        if (position !=  RecyclerView.NO_POSITION) {
+                            itemClick.onItemClick(position);
+                        }
+                    }
+                }
+            });
         }
     }
 

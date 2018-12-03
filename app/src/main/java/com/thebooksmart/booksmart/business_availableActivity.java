@@ -2,6 +2,7 @@ package com.thebooksmart.booksmart;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import com.thebooksmart.booksmart.Adapter.MyAvailBizAdapter;
@@ -40,6 +41,7 @@ public class business_availableActivity extends AppCompatActivity {
         //attach adapter to the listview
         /*listView.setAdapter(adapter);*/
     }
+
 
 
 }
